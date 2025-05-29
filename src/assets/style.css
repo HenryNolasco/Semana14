@@ -134,11 +134,13 @@ footer .socialLinks a:hover{
      
 }
 
-.aboutmMeDescription{
-    width: 80%;
-    margin: 1%;
+.aboutmMeDescriptionContainer{
+    width: 70%;
+    margin: 1% 1% 1% 5%;
 }
 
+
+/*Seleccion de habilidades*/
 .skillsContainer{
     width: 90%;
     margin: 0 auto 3% auto;
@@ -147,65 +149,135 @@ footer .socialLinks a:hover{
     box-shadow: 1px 1px 10px #b0b0b0;
     margin-bottom: 3%;
 }
-.sectionTitle{
+
+/*Titulo de seccion*/
+.sectionTitle {
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 700;
     margin: 2% 0;
     color: #222;
 }
 
-.skillsGrid{
+.skillsGrid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 1%;
 }
 
-.skillBox{
-    background-color: #f0f0f0;
-    padding: 4%;
+.skillBox {
+    background-color: #f8f8ff;
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 1px 1px 10px #b0b0b0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.skillBox:hover{
-    scale: 103%;
-    background-color: #4898e7;
+.skillBox:hover {
+    transform: scale(102%);
 }
 
-.skillsTitle{
-    text-align: center;
-    font-size: 25px;
+.skillTitle {
+    font-size: 22px;
     font-weight: 600;
+    margin-bottom: 10px;
     color: #222;
 }
 
-.skillText{
+.skillText {
     font-size: 16px;
     font-weight: 400;
     color: #444;
 }
 
-.interestContent{
+/* Sección de intereses */
+.interestsContainer {
+    width: 90%;
+    margin: 0 auto 3% auto;
+    padding: 2%;
+    background-color: #f0f0f0;
+    box-shadow: 1px 1px 10px #b0b0b0;
+    border-radius: 8px;
+}
+
+.interestsContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 3%;
 }
 
-.interestText{
+.interestText {
+    width: 60%;
+}
+
+.interestImagesContainer {
+    width: 35%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.interestImageBox {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.interestImage {
     width: 50%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.interestImage:hover {
+    transform: scale(1.05);
+}
+
+/* Sección de metas profesionales */
+.goalsContainer {
+    width: 90%;
+    margin: 0 auto 3% auto;
+    padding: 2%;
+    background-color: #e0f0e0;
+    box-shadow: 1px 1px 10px #b0b0b0;
+    border-radius: 8px;
+}
+
+.goalsList {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
     padding: 1%;
 }
 
-.interestImageContainer{
-    width: 100%;
-    margin-right: 1%;
-
+.goalItem {
+    flex: 1;
+    background-color: #f8f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
-.interestImage{
-    width: 50%;
+.goalItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.goalTitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+    text-align: center;
+}
+
+.goalText {
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    text-align: center;
+}
+
+   
